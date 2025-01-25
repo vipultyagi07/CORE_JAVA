@@ -1,6 +1,6 @@
 # Core java program of these notes
 
-You can download it from the [Vipul's notes](https://drive.google.com/drive/folders/1IDEteTioonkOygc_-D0F69WsJmW2P-xy?usp=sharing).
+You can download the notes from [Vipul's notes](https://drive.google.com/drive/folders/1IDEteTioonkOygc_-D0F69WsJmW2P-xy?usp=sharing).
 
 
 ## Steps to Run the Project
@@ -9,32 +9,55 @@ Follow the steps below to set up and run the project.
 
 ### Step 1: Install Java JDK 17
 
-Ensure that Java JDK 21 is installed on your machine. You can download it from the [official Oracle website](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html).
+Ensure that Java JDK 17 is installed on your machine. You can download it from the [official Oracle website](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html).
 
-### Step 2: Build the Project
-
-Navigate to the root directory of the project (where the `pom.xml` file is located) and run the following command to build the project:
-
+#### To verify Java, run the following command in your terminal from any location:
 ```bash
-mvn clean install -DskipTests
+ java -version
 ```
 
-### Step 3: Run the project
+### Step 2: open the project in IntelliJ 
 
-Once the build is successful, you can run the project by executing the following command in the same root directory:
+Now your terminal inside the IntelliJ is at `/CORE_JAVA`
 
+### Step 3: To run any java file in terminal follow these steps 
+
+go to the folder where the file is present.
 
 ```bash
-java -jar target/project-management-0.0.1-SNAPSHOT.jar
+ cd src/main/java
 ```
 
-### Port:
-The application will run on port 9092.
+now compile the java file, a file with name  FILE_NAME.class will be created
+
+```bash
+ javac FILE_NAME.java
+```
+
+example `javac VipulWorld.java`
+
+now we will run the compiled class 
+
+```bash
+ java FILE_NAME
+```
+
+example `java VipulWorld`
+
+after running delete all `.class` file which are created during the execution of this command  `javac FILE_NAME.java`
+
+```bash
+ rm -rf $(find . -type f -name "*.class")
+```
 
 
-## Swagger
-[swagger link](http://localhost:9092/pms/swagger-ui/index.html#/)
 
-## Health Check of Service
-[health check link](http://localhost:9092/pms/actuator/health)
+# Extra
+
+## GIT
+|![goto](https://img.shields.io/badge/Git%20Hub-Commands-orange)&nbsp;| [link](https://docs.google.com/document/d/1RO0smtVXZPqvFWyjVzIt2poVnQLoNIK8wl0wAy_Tepk/edit?usp=sharing)|
+ | ------------- | --------- | 
+
+
+
 
